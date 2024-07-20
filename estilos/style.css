@@ -26,13 +26,13 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 280px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -57,6 +57,23 @@ div#formulario > p {
 form  label{
     display: none;
 }
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #089E67;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 4px;
+    color: black;
+    transform: translateY(-13px);
+}
 form > div.campo{
     background-color: #089E67;
     width: 100%;
@@ -64,6 +81,11 @@ form > div.campo{
     height: 40px;
     border-radius: 6px;
     margin: 5px 0px;
+    border: 2px solid #089E67;
+}
+div.campo > input:focus-within{
+    background-color: white;
+    border: none;
 }
 form > input[type=submit] {
     display: block;
